@@ -1,37 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LIMA</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/flags/golf.png" type="image/png" sizes="16x16">
+	<title>lima.ioe</title>
+	<!--No Href external links to css or js -->
+	<link rel="stylesheet" href= "css/custom.css">
+		<style>
+		#if-location { 
+		position: absolute; left: 10px; top:200px;
+		width:800px
+		height:500px
+	}
+
+
+.dropbtn {
+
+    background-color: #343838;
+    color: white;
+    padding: 1px;
+    font-size: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 27px 27px 27px 27px rgba(0,0,0,0.4);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #005F6B}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #005F6B;
+}
+iframe{
+margin:30px;
+padding:25px;
+color:45ada8;
+border-color:#9de0ad;
+border-style:double;
+border-width: 10px;
+background:#45ada8;
+}
+/*dropdown*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+</style>
+
 </head>
+
 <body>
- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-		<div class="dropdown">
-	`		<button class="dropbtn" ><img src = "img/pt.png" style="width:45px;height:45px;"></button>
-			<div class="dropdown-content">
-			 <a href="https://sites.google.com/s/0B7-F9VdP2g3UZ3hGajFWZVMxQ2c/p/0B7-F9VdP2g3UMVNvV1VLSC16a0E/edit?authuser=1">Google Site</a>
-			 <a href="Downloads">Downloads</a>
-			 <a href="templates">Templates</a>
-			 <a href="javascript">Javascript</a>
-		  </div>
-         </div>    
-    </ul>
-  </div>
-</nav>
-<div class="container">
-<!-- do not change the following until you have met localhost checkoff #2 -->
-<div class="jumbotron text-center">
-  <h1>LIMA</h1>
-  <pre>
-
-
-
-  </pre>
-</div>
-
+	<ul>
+		<li><div class="dropdown"></li>
+			<button class="dropbtn" ><img src = "img/pt.png" style="width:60px;height:60px;"></button></li>
+				<div class="dropdown-content">
+					<a href="php" target = " blank" class = "menu">PHP</a>
+					<a href="amp/" class = "menu">PMA</a>
+					<a href="app/" class = "menu">php-myadmin</a>
+					<a href="downloads/"class = "menu">Downloads</a>
+					<a href="http://10.183.2.12:8080" class = "menu">server8080</a>
+					<a href="logs/" target = " blank" class = "menu">Logs</a>
+					<a href="bootstrap/index.html" target = " blank" class = "menu">Bootstrap</a>
+					<a href="HTML" target = " blank" class = "menu">HTML</a>
+				</div>
+		</div>
+					<a href = "https://sites.google.com/a/tritechsc.org/coryl/" target = "_blank"><img src = "img/sites.png" height = "50"></a>
+					<li><a href="php" target = " blank" class = "menu">PHP</a></li>
+					<li><a href="https://coryrlambert.github.io/" target = " blank" class = "menu">Github.io</a></li>
+					<li><a href="https://github.com/CoryRLambert/" target = " blank" class = "menu">Github</a></li>
+					<li><a href="amp/" class = "menu">PMA</a></li>
+					<li><a href="app/" class = "menu">php-myadmin</a></li>
+					<li><a href="downloads/"class = "menu">Downloads</a></li>
+					<li><a href="http://10.183.2.12:8080" class = "menu">server8080</a></li>
+					<li><a href="logs/" target = " blank" class = "menu">Logs</a></li>
+					<li><a href="bootstrap/index.html" target = " blank" class = "menu">Bootstrap</a></li>
+					<li><a href="HTML" target = " blank" class = "menu">HTML</a></li>
+					<li><a href="phpcode/"class = "menu">Phpcode</a></li>
+	</ul>
+	
+	<div class="embed-responsive embed-responsive-16by9">
+				<iframe  style="width:720px; height:480px;" src="HTML"  ></iframe>
+	</div>
+	
 </body>
+
 </html>
