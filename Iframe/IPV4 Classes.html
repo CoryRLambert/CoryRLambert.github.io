@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>LIMA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../dist/css/custom.css">
+	<script src="../dist/jquery/jquery.min.js"></script>
+	<script src="../dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="IPV4 Classes.html">IPV4 Classes</a></li>
+		<li><a href="Newton's Laws of Motion.html">Newton's Laws of Motion</a></li>
+        <li><a href="The Laws of Thermodynamics.html">The Laws of Thermodynamics</a></li>
+		<!--
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://sites.google.com/a/tritechsc.org/coryl/" target = "_blank">Google site</a></li>
+			<li><a href="https://github.com/CoryRLambert/" target = " blank">Repos</a></li>
+          </ul>
+        </li>
+		-->
+
+      </ul>
+          </button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</nav>
+<footer class="container-fluid text-center">
+
+<body>
+	
+	
+	<div class="container">
+<h3>IPV4 Classes</h3>
+<p>Ths is an Internet Protocol (IPv4) Subnet Chart. You can use this to quickly look up how your might need to subnet your network. At the bottom there is 
+a quick how-to on calculating subnets.</p>
+
+
+<p>Class address ranges:
+<UL>
+<LI>Class A = 1.0.0.0 to 126.0.0.0</LI>
+
+<LI>Class B = 128.0.0.0 to 191.255.0.0</LI>
+<LI>Class C = 192.0.1.0 to 223.255.255.0</LI>
+</UL>
+</p>
+
+<p>Reserved address ranges for private (non-routed) use : 
+<UL>
+<LI>10.0.0.0 -> 10.255.255.255</LI>
+<LI>172.16.0.0 -> 172.31.255.255</LI>
+<LI>192.168.0.0 -> 192.168.255.255</LI>
+
+</UL>
+</p>
+
+<p>Other reserved addresses:
+<UL>
+<LI>127.0.0.0 is reserved for loopback and IPC on the local host</LI>
+<LI>224.0.0.0 -> 239.255.255.255 is reserved for multicast addresses</LI>
+</UL>
+</p>
+
+<p>Chart notes:
+<UL>
+<LI>Number of Subnets - "( )" Refers to the number of effective subnets,
+since the use of subnet numbers of all 0s or all 1s is highly frowned upon and
+RFC non-compliant.</LI>
+<LI>Number of Hosts - Refers to the number of effective hosts, excluding the
+network and broadcast address.</LI>
+
+</UL>
+</p>
+<br>
+
+
+<p><B>Class A</B></p>
+
+<TABLE border="1" CELLPADDING="5">
+
+<TR><TD><B>Network Bits</B></TD>
+<TD><B>Subnet Mask</B></TD>
+<TD><B>Number of Subnets</B></TD>
+<TD><B>Number of Hosts</B></TD></TR>
+
+<TR><TD> /8 </TD><TD> 255.0.0.0 </TD><TD> 0 </TD><TD> 16777214 </TD></TR>
+<TR><TD> /9 </TD><TD> 255.128.0.0 </TD><TD> 2 (0) </TD><TD> 8388606 </TD></TR>
+
+<TR><TD> /10 </TD><TD> 255.192.0.0 </TD><TD> 4 (2) </TD><TD> 4194302
+</TD></TR>
+<TR><TD> /11 </TD><TD> 255.224.0.0 </TD><TD> 8 (6) </TD><TD> 2097150
+
+</TD></TR>
+<TR><TD> /12 </TD><TD> 255.240.0.0 </TD><TD> 16 (14) </TD><TD> 1048574
+</TD></TR>
+<TR><TD> /13 </TD><TD> 255.248.0.0 </TD><TD> 32 (30) </TD><TD> 524286
+
+</TD></TR>
+<TR><TD> /14 </TD><TD> 255.252.0.0 </TD><TD> 64 (62) </TD><TD> 262142
+</TD></TR>
+<TR><TD> /15 </TD><TD> 255.254.0.0 </TD><TD> 128 (126) </TD><TD> 131070
+
+</TD></TR>
+<TR><TD> /16 </TD><TD> 255.255.0.0 </TD><TD> 256 (254) </TD><TD> 65534
+</TD></TR>
+<TR><TD> /17 </TD><TD> 255.255.128.0 </TD><TD> 512 (510) </TD><TD> 32766
+
+</TD></TR>
+<TR><TD> /18 </TD><TD> 255.255.192.0 </TD><TD> 1024 (1022) </TD><TD> 16382
+</TD></TR>
+<TR><TD> /19 </TD><TD> 255.255.224.0 </TD><TD> 2048 (2046) </TD><TD> 8190
+
+</TD></TR>
+<TR><TD> /20 </TD><TD> 255.255.240.0 </TD><TD> 4096 (4094) </TD><TD> 4094
+</TD></TR>
+<TR><TD> /21 </TD><TD> 255.255.248.0 </TD><TD> 8192 (8190) </TD><TD> 2046
+
+</TD></TR>
+<TR><TD> /22 </TD><TD> 255.255.252.0 </TD><TD> 16384 (16382) </TD><TD> 1022
+</TD></TR>
+<TR><TD> /23 </TD><TD> 255.255.254.0 </TD><TD> 32768 (32766) </TD><TD> 510
+
+</TD></TR>
+<TR><TD> /24 </TD><TD> 255.255.255.0 </TD><TD> 65536 (65534) </TD><TD> 254
+</TD></TR>
+<TR><TD> /25 </TD><TD> 255.255.255.128 </TD><TD> 131072 (131070) </TD><TD> 126
+
+</TD></TR>
+<TR><TD> /26 </TD><TD> 255.255.255.192 </TD><TD> 262144 (262142) </TD><TD> 62
+</TD></TR>
+<TR><TD> /27 </TD><TD> 255.255.255.224 </TD><TD> 524288 (524286) </TD><TD> 30
+
+</TD></TR>
+<TR><TD> /28 </TD><TD> 255.255.255.240 </TD><TD> 1048576 (1048574) </TD><TD>
+14 </TD></TR>
+<TR><TD> /29 </TD><TD> 255.255.255.248 </TD><TD> 2097152 (2097150) </TD><TD> 6
+
+</TD></TR>
+<TR><TD> /30 </TD><TD> 255.255.255.252 </TD><TD> 4194304 (4194302) </TD><TD> 2
+</TD></TR>
+
+</TABLE>
+
+<P></P>
+
+<p><b>Class B</b></p>
+
+<TABLE border="1" CELLPADDING="5">
+
+<TR><TD><B>Network Bits</B></TD>
+<TD><B>Subnet Mask</B></TD>
+<TD><B>Number of Subnets</B></TD>
+<TD><B>Number of Hosts</B></TD></TR>
+
+<TR><TD> /16 </TD><TD> 255.255.0.0 </TD><TD> 0 </TD><TD> 65534 </TD></TR>
+
+<TR><TD> /17 </TD><TD> 255.255.128.0 </TD><TD> 2 (0) </TD><TD> 32766
+</TD></TR>
+<TR><TD> /18 </TD><TD> 255.255.192.0 </TD><TD> 4 (2) </TD><TD> 16382
+
+</TD></TR>
+<TR><TD> /19 </TD><TD> 255.255.224.0 </TD><TD> 8 (6) </TD><TD> 8190 </TD></TR>
+<TR><TD> /20 </TD><TD> 255.255.240.0 </TD><TD> 16 (14) </TD><TD> 4094
+
+</TD></TR>
+<TR><TD> /21 </TD><TD> 255.255.248.0 </TD><TD> 32 (30) </TD><TD> 2046
+</TD></TR>
+<TR><TD> /22 </TD><TD> 255.255.252.0 </TD><TD> 64 (62) </TD><TD> 1022
+
+</TD></TR>
+<TR><TD> /23 </TD><TD> 255.255.254.0 </TD><TD> 128 (126) </TD><TD> 510
+</TD></TR>
+<TR><TD> /24 </TD><TD> 255.255.255.0 </TD><TD> 256 (254) </TD><TD> 254
+
+</TD></TR>
+<TR><TD> /25 </TD><TD> 255.255.255.128 </TD><TD> 512 (510) </TD><TD> 126
+</TD></TR>
+<TR><TD> /26 </TD><TD> 255.255.255.192 </TD><TD> 1024 (1022) </TD><TD> 62
+
+</TD></TR>
+<TR><TD> /27 </TD><TD> 255.255.255.224 </TD><TD> 2048 (2046) </TD><TD> 30
+</TD></TR>
+<TR><TD> /28 </TD><TD> 255.255.255.240 </TD><TD> 4096 (4094) </TD><TD> 14
+
+</TD></TR>
+<TR><TD> /29 </TD><TD> 255.255.255.248 </TD><TD> 8192 (8190) </TD><TD> 6
+</TD></TR>
+<TR><TD> /30 </TD><TD> 255.255.255.252 </TD><TD> 16384 (16382) </TD><TD> 2
+
+</TD></TR>
+
+</TABLE>
+
+<P></P>
+
+<p><b>Class C</b></p>
+
+<TABLE border="1" CELLPADDING="5">
+
+<TR><TD><B>Network Bits</B></TD>
+<TD><B>Subnet Mask</B></TD>
+<TD><B>Number of Subnets</B></TD>
+<TD><B>Number of Hosts</B></TD></TR>
+
+<TR><TD> /24 </TD><TD> 255.255.255.0 </TD><TD> 0 </TD><TD> 254 </TD></TR>
+<TR><TD> /25 </TD><TD> 255.255.255.128 </TD><TD> 2 (0) </TD><TD> 126
+
+</TD></TR>
+<TR><TD> /26 </TD><TD> 255.255.255.192 </TD><TD> 4 (2) </TD><TD> 62 </TD></TR>
+<TR><TD> /27 </TD><TD> 255.255.255.224 </TD><TD> 8 (6) </TD><TD> 30 </TD></TR>
+
+<TR><TD> /28 </TD><TD> 255.255.255.240 </TD><TD> 16 (14) </TD><TD> 14
+</TD></TR>
+<TR><TD> /29 </TD><TD> 255.255.255.248 </TD><TD> 32 (30) </TD><TD> 6
+
+</TD></TR>
+<TR><TD> /30 </TD><TD> 255.255.255.252 </TD><TD> 64 (62) </TD><TD> 2
+</TD></TR>
+
+</TABLE>
+
+<br><br>
+<HR>
+
+
+
+<b>Supernetting (CIDR) Chart</b>
+
+
+<UL>
+<LI> CIDR - Classless Inter-Domain Routing.</LI>
+<LI> Note: The Number of Class C networks must be contiguous.<BR>
+For example, 192.169.1.0/22  represents the following block of addresses:<BR>
+192.169.1.0, 192.169.2.0, 192.169.3.0 and 192.169.4.0.</LI>
+</UL>
+
+<p><b>Class C</b></p>
+
+<TABLE border="1" CELLPADDING="5">
+
+<TR><TD><B>CIDR Block</B></TD>
+<TD><B>Supernet Mask</B></TD>
+<TD><B>Number of Class C Addresses</B></TD>
+<TD><B>Number of Hosts</B></TD></TR>
+
+<TR><TD> /14 </TD><TD> 255.252.0.0 </TD><TD> 1024 </TD><TD> 262144 </TD></TR>
+
+<TR><TD> /15 </TD><TD> 255.254.0.0 </TD><TD> 512 </TD><TD> 131072 </TD></TR>
+<TR><TD> /16 </TD><TD> 255.255.0.0 </TD><TD> 256 </TD><TD> 65536 </TD></TR>
+
+<TR><TD> /17 </TD><TD> 255.255.128.0 </TD><TD> 128 </TD><TD> 32768 </TD></TR>
+<TR><TD> /18 </TD><TD> 255.255.192.0 </TD><TD> 64 </TD><TD> 16384 </TD></TR>
+
+<TR><TD> /19 </TD><TD> 255.255.224.0 </TD><TD> 32 </TD><TD> 8192 </TD></TR>
+<TR><TD> /20 </TD><TD> 255.255.240.0 </TD><TD> 16 </TD><TD> 4096 </TD></TR>
+
+<TR><TD> /21 </TD><TD> 255.255.248.0 </TD><TD> 8 </TD><TD> 2048 </TD></TR>
+<TR><TD> /22 </TD><TD> 255.255.252.0 </TD><TD> 4 </TD><TD> 1024 </TD></TR>
+
+<TR><TD> /23 </TD><TD> 255.255.254.0 </TD><TD> 2 </TD><TD> 512 </TD></TR>
+
+</TABLE>
+
+
+<br><br>
+<hr>
+<br><br>
+
+
+<table border="1" cellpadding="4">
+
+
+
+<tr>
+<td>
+
+<br> 
+<br>
+<b>
+[Understanding decimal - Base 10]
+</b><br><br>
+
+The first thing you must know is that the common number system used world wide is the <b>decimal system</b> (otherwise known as <b>base 10</b>). What makes the decimal 
+system a base 10 system is that it is <i><b>based on grouping numbers by 10's</b></i>. It is believed that the system evolved because we have ten fingers and ten  toes 
+which over the years we have used for counting. I use mine all the time (grin).  We name the ten digits:  zero, one, two, three, four, five, six, seven, eight and 
+nine.<br><br>
+
+The decimal system has a <b>1</b>'s place, a <b>10</b>'s place, a <b>100</b>'s place, a <b>1000</b>'s place and so on. We say the number places are grouped  by 10's 
+because
+<i><b>multiplying each number place by 10 gives you the next number place</b></i>. So:  1x10=10 (the 10's place), 10x10=100 (the 100's place), 
+100x10=1000 (the 1000's place) etc.<br><br>
+
+Let's look at the decimal number <b>103</b> by place.<br><br>
+
+<b>103</b> <- <i>read from right to left</i><br><br>
+
+We have a <b>3</b> in the <b>1's place</b><br>
+
+We have a <b>0</b>in the <b>10's place</b><br>
+We have a <b>1</b> in the <b>100's place</b><br><br>
+
+Thus: <b>100+0+3=103</b><br><br>
+
+By now you probably feel like you have attended Kindergarten for the second time in your life? Sorry about that but it is very important that you
+understand the concept of what a number system is, and what it is based on before we look at binary.
+
+<br><br><br>
+
+ <b>
+[Understanding binary - base 2]</b>
+<br><br>
+
+Binary is a <i>base 2</i> system, and thus groups numbers by 2's and not by 10's like the decimal system.  We name the two digits:  zero and one. The binary system has a 
+<b>1</b>'s place, a <b>2</b>'s place, a <b>4</b>'s place, an <b>8</b>'s place, a <b>16</b>'s place and so on. We say the number places are grouped  by 2's because 
+<i><b>multiplying each number place by 2 gives you the next number place</b></i>. So:  1x2=2 (the 2's place), 2x2=4 (the 4's place), 4x2=8 (the 8's 
+place), 8x2=16 (the 16's place) etc. 
+
+
+<br><br>
+
+Let's look at the decimal number Let's look at the decimal number <b>103</b> in <i>binary format</i>:<br><br> 
+
+<b>01100111</b> <- <i>read from right to left</i><br><br>
+
+We have a <b>1</b> in the <b>1's place</b><br>
+
+We have a <b>1</b> in the <b>2's place</b><br>
+We have a <b>1</b> in the <b>4's place</b><br>
+We have a <b>0</b> in the <b>8's place</b><br>
+
+We have a <b>0</b> in the <b>16's place</b><br>
+We have a <b>1</b> in the <b>32's place</b><br>
+We have a <b>1</b> in the <b>64's place</b><br>
+
+We have a <b>0</b> in the <b>128's place</b><br><br>
+
+Thus: <b>0+64+32+0+0+4+2+1=103</b><br><br> 
+
+Okay,  Let's test your skills. Here is a list of binary numbers, try converting them to decimal and check your answers at the end of this post.<br><br>
+
+
+10000000 <br>
+
+11000000 <br>
+
+11100000 <br>
+01000000 <br>
+10000011 <br>
+10010001 <br>
+11111111 <br><br>
+
+If you were able to convert these numbers to decimal then congratulations! You're ready to move on to the next section. <br><br><br>
+
+<b>
+[Understanding a subnet mask]</b><br><br>
+
+Now that you understand what binary is, let's have a look at our two subnet masks from the beginning of my post:<br><br>
+
+<b>
+192.168.1.0 / 255.255.255.0<br>
+192.168.1.0/24</b><br><br>
+
+The concept of a subnet mask is simple.  You have a network and you have hosts on the network (anything with an IP address is a host). <i><b>The subnet mask determines 
+what portion of the TCP/IP address represents your network and what portion can be used for your hosts</b></i>. Because I am a simple person, I think of it like this; The 
+network number represents the street I live on, and the host portion is used for the numbers on all the houses on my street. <br><br>
+
+A subnet mask of <b>255.255.255.0</b> means that the first <i>three</i> octets of the address will be used for the network, and thus our network number is 
+<b>192.168.1</b>. This means we can have <b>254</b> computers on this network, because the fourth octet is not being used by the network portion of the address. We know 
+this because of the <b>0 </b>in the subnet mask (255.255.255.<b>0</b>). <br><br> 
+
+We call each of the number sections an <i><b>octet</b></i> because we think of them in binary, and there are eight possible bits in each section. Eight bits is an octet.  
+<b>11111111</b> in binary is <b>255</b> in decimal (did you do the conversions?). So our decimal subnet mask 255.255.255.0 displayed in binary is 
+going to be:<br><br>
+
+
+11111111.11111111.11111111.00000000
+
+<br><br>
+
+If you count all the ones, you will find that there are <b>24</b> of them. Now look at the subnet mask examples again.<br><br>
+
+<b>
+192.168.1.0/255.255.255.0<br>
+192.168.1.0/24</b><br><br>
+
+Do you see why <i>both subnet masks are the same</i>?  The number <b>24</b> is the number of <b><i>bits</i></b> used in the network portion of the address, and is 
+short-hand for writing the address/subnet mask combination. It becomes important to understand this when you start dividing your network into multiple sub networks. 
+<br><br><br>
+
+<b>
+[Understanding Subnetting]</b><br><br>
+Before reading this section, you should have a <i>good understanding</i> of what a subnet mask is and how binary bits represent the subnet mask.<br><br>
+
+Simply put, subnetting is <i>dividing your network into <b>multiple sub networks</b></i>. To go back to my silly example about houses and streets, subnetting gives you 
+multiple streets in your neighborhood.<br><br>
+
+There are <i>two methods</i> for dividing your network into multiple sub networks; One is to simply change your network numbers keeping the same subnet mask. The other is 
+to subnet your network into smaller sub networks.<br><br>
+
+Keeping the same mask:<br>
+Your network could be divided into two or more networks by changing the network portion of the address such as <i>192.168.1</i> and <i>192.168.2</i> and keeping the same 
+subnet mask.<br><br>
+
+<i>Example:</i><br>
+<b>192.168.1.0/255.255.255.0</b><br>
+<b>192.168.2.0/255.255.255.0</b><br><br>
+
+Doing this would give you <b>two separate networks</b> with <b>254 hosts per network</b>. This is a very common method of dealing with multiple networks. However, back in 
+the good old days you had to pay for every IP address you used, and if you had 25 computers on your network you probably would not want to pay for 254 addresses! The 
+answer to the problem is...subnetting.<br><br>
+
+Subnetting a network:<br>
+<b><i>Subnetting is when you use bits from the host portion of your address as part of your network number</i></b>. This let's you subdivide your network at the cost of 
+host addresses, which is great if you're paying for every host IP address. It will save you money because you pay for fewer TCP/IP addresses. Confused? Here is where 
+understanding binary is important.<br><br>
+
+Lets look at a new subnet mask:<br>
+
+<b>255.255.255.224</b><br><br>
+
+As you can see in the fourth octet, some of the host portion of this subnet mask is now being used for part of the network address. Which means 
+we are <i><b>now using some of the binary bits in the fourth octet for our network numbers</b></i>, and that gives us fewer hosts than our old mask (which gave us 254), 
+but gives us more networks (which is why we call it subnetting). <br><br>
+
+How can we tell how many networks and hosts per network this new subnet mask will give us? Well... we shall have to use some of our newly acquired binary skills.<br><br>
+
+The <i>first task</i> is to find out <b><i>how many bits in the fourth octet are being used</i></b>?  The decimal number is 224, what is the decimal number 224 as 
+represented in binary?<br><br>
+
+The decimal number <b>224</b> in binary is: <br>
+<b>11100000</b><br><br>
+
+We have a <b>0</b> in the <b>1's place</b><br>
+We have a <b>0</b> in the <b>2's place</b><br>
+
+We have a <b>0</b> in the <b>4's place</b><br>
+We have a <b>0</b> in the <b>8's place</b><br>
+We have a <b>0</b> in the <b>16's place</b><br>
+
+We have a <b>1</b> in the <b>32's place</b><br>
+We have a <b>1</b> in the <b>64's place</b><br>
+We have a <b>1</b> in the <b>128's place</b><br><br>
+
+Thus: 128+64+32+0+0+0+0+0=<b>224</b>
+<br><br>
+
+So our complete subnet mask in binary is:<br>
+
+1111111.11111111.11111111.<b>11100000</b><br><br>
+
+We now know that three bits from the fourth octet are used. How can we tell how many sub networks we're going to have?
+This requires some math - sorry.  The formula is: <b>2<sup>n</sup>-2</b>, where <b><i>n</i></b> is the 
+<i>number of bits being used from the host portion</i> of our subnet mask. <br><br>
+
+<b>Important Note:</b>We <I>subtract 2 networks (the first and last subnets) from the total</I> unless we have equipment that supports
+IP Subnet-Zero in which case we use the formula <B>2<SUP>n</SUP></B> - please see the addendum at the end of this
+lesson for more details.<BR><BR>
+
+The formula for <i><b>three bits</b></i> is:<br>
+<b>2<sup>3</sup>-2</b>=6<br><br>
+
+In simpler terms:<br>
+<b>(2x2x2)-2</b>=6<br><br>
+
+So our network is <b>sub divided into 6 networks</b>. Next, we want to know what the network numbers are, and how many hosts we can have on each of the 6 networks?<br><br>
+
+What is the first subnet?  Let's have a look at the bits in our <i>fourth octet</i> again. The bit that gives us the answer is the <i>(1) closest to the first zero</i>, 
+and in this case it is the 3rd bit from the left.<br><br>
+
+11<b>1</b>00000<br><br>
+
+
+The 3rd bit will <i>start our first network</i>, and the 3rd bit is in the <b><i>32</i></b>'s place (remember binary).  Start adding the value 32 to itself six times to 
+get the six network numbers.<br><br>
+ 
+<b>Note:</b>  A quicker way to find our starting network number is to <i>subtract our
+mask from 256</i>.<br>
+
+<b>256-224</b>=32<br><br>
+
+Here are our network numbers:<br><br>
+
+32<br>
+64<br>
+96<br>
+128<br>
+160<br>
+
+192
+<br><br>
+A better way to display this is:<br><br>
+
+
+192.168.1.<b>32</b><br>
+192.168.1.<b>64</b><br>
+192.168.1.<b>96</b><br>
+
+192.168.1.<b>128</b><br>
+
+192.168.1.<b>160</b><br>
+192.168.1.<b>192</b><br>
+<br>
+
+The host addresses will <i>fall between the network numbers</i>, so we will have <b>30</b>
+
+hosts per network. You're probably wondering why it's <i><b>not</b></i> 31?   The answer is that the last address of each subnet is used as the <i>broadcast address</i> 
+for that subnet. <br><br>
+
+Example:<br>
+<b>Subnet:</b>192.168.1.32 / 255.255.255.224<br> 
+
+<b>Address Range:</b> 192.168.1.33 through 192.168.1.62  (30 hosts)<br>
+
+<b>Subnet Broadcast Address:</b>192.168.1.63<br><br>
+
+
+Quiz:<br>
+
+Let's test your skills- write the address range and broadcast address for the following subnet. You will find the answer at the end of this post.
+<br><br>
+
+<b>Subnet:</b>  192.168.1.128 / 255.255.255.224 <br>
+<b>Address Range</b>?<br>
+
+<b>Subnet Broadcast Address</b>?<br><br>
+
+If we we're paying for our TCP/IP addresses, we would only pay for one network and host combination, thus paying for 30 hosts and <i>not</i> 254. It could mean some real 
+savings, it also frees up the remaining addresses for other organizations to use.<br><br>
+
+Let's look at another subnet mask: <br>
+<b>255.255.255.240</b><br><br>
+
+How many bits are used from the host portion? To find this out, we need to know how the decimal number 240 is represented in binary.<br><br>
+
+The answer is:<br>
+11110000<br><br>
+
+So four bits are taken from the host portion of our mask. We do the same math as before:<br><br>
+
+<b>2<sup>4</sup>-2</b>=14<br><br>
+
+In simpler terms:<br>
+
+<b>(2x2x2x2)-2</b>=14<br><br>
+
+We will have <b>14 sub networks</b>, and what will the network numbers be? Look at the <i>fourth bit</i>, it's in the 16's place: <br>
+
+111<b>1</b>0000<br><br>
+
+<b>Note:</b>  A quicker way to find our starting network number is to <i>subtract the
+value of our mask from 256</i>.  So: <b>256-240</b>=16<br><br>
+
+Start adding 16 to itself- fourteen times to get all 14 network numbers:<br><br>
+
+
+16<br>
+32<br>
+48<br>
+64<br>
+80<br>
+96<br>
+
+112<br>
+128<br>
+
+144<br>
+160<br>
+176<br>
+192<br>
+208<br>
+224<br><br>
+
+A better way to display our subnets is:<br><br>
+
+
+
+192.168.1.16<br>
+192.168.1.32<br>
+192.168.1.48<br>
+192.168.1.64<br>
+192.168.1.80<br>
+192.168.1.96<br>
+
+192.168.1.112<br>
+192.168.1.128<br>
+192.168.1.144<br>
+
+192.168.1.160<br>
+192.168.1.176<br>
+192.168.1.192<br>
+192.168.1.208<br>
+192.168.1.224<br><br>
+
+The host addresses fall between the network numbers. So we will have 14 host addresses on each of our 14 sub networks (<i>remember</i>: the last or 15th address is the 
+broadcast address for that subnet).<br><br>
+
+If you had a small company with 10 hosts and needed to have a static IP address for all of your hosts, you would  be assigned a network/subnet mask and a valid IP address 
+range. <br><br>
+
+Here is an example of what that might look like:<br><br>
+
+<b>Network</b>: 205.112.10.16/.255.255.255.240<br>
+
+<b>Address Range</b>:  205.112.10.17 through 205.112.10.30<br>
+
+<b>Subnet Broadcast Address</b>: 205.112.10.31<br><br><br>
+
+<b>Important Addendum</b>: There may be concerns about why the first and last subnets were not used in any of the examples
+above. What happened to them? Did they get scared and run away? The answer is simple 
+- <B>nothing</B> happend to them it's just that some older routing equipment and software does not support
+the use of the first and last subnets. This is documented in the older TCP/IP doc rfc 950. The newer
+standard outlined in rfc 1812 allows for the use of the first and last subnets- making it the current
+standard in IPv4 subnetting.<br><br>
+
+<b>
+[Answers to Binary Conversions]</b><br><br>
+
+
+10000000 = 128<br>
+
+11000000 = 192<br>
+11100000 = 224<br>
+01000000 = 64<br>
+10000011 = 131<br>
+10010001 = 145<br>
+
+11111111 = 255<br><br><br>
+
+<b>
+[Answer to Subnet Question]</b><br><br>
+
+<b>Subnet:</b>192.168.1.128 / 255.255.255.224<br>
+
+<b>Address Range:</b>  192.168.1.129 through 192.168.1.158<br>
+
+<b>Subnet Broadcast Address:</b> 192.168.1.159<br><br><br>
+
+</td>
+
+</tr>
+</table>
+
+
+</div>
+
+
+
+
+
+</body>
+
+</footer>
+
+</body>
+</html>
