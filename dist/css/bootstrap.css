@@ -1316,8 +1316,7 @@ mark,
   text-align: right;
 }
 .text-center {
-  text-align: center;
-  <!--color: #066c78;-->
+  text-align: center
 }
 .text-justify {
   text-align: justify;
@@ -1790,7 +1789,6 @@ pre code {
   }
   .col-sm-9 {
     width: 75%;
-	<!--Color: #066c78-->
   }
   .col-sm-8 {
     width: 66.66666667%;
