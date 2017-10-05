@@ -1317,7 +1317,7 @@ mark,
 }
 .text-center {
   text-align: center;
-  color: #066c78;
+  <!--color: #066c78;-->
 }
 .text-justify {
   text-align: justify;
