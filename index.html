@@ -1,71 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
- <title>LIMA</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="dist/css/bootstrap.css">
-		<link rel="stylesheet" href="dist/css/custom.css">
-	<script src="dist/jquery/jquery.min.js"></script>
-	<script src="dist/js/bootstrap.min.js"></script>
-<style>
-	.row.content{
-		color: #066c78;
-		
-	}
-	.col-sm-4{
-		color: #066c78;
-	}
-	/* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
+  <html lang="en">
+    <head>
+      <title>LIMA</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="dist/css/bootstrap.css">
+		  <link rel="stylesheet" href="dist/css/custom.css">
+	    <script src="dist/jquery/jquery.min.js"></script>
+	    <script src="dist/js/bootstrap.min.js"></script>
+      <style>
+		.row{
+			color: #066c78;
+			}
+		.col-sm-4{
+			color: #066c78;
+			}
+		/* Remove the navbar's default margin-bottom and rounded borders */ 
+		.navbar{
+			margin-bottom: 0;
+			border-radius: 0;
+			}
+		/* Add a gray background color and some padding to the footer */
+		footer {
+			background-color: #f2f2f2;
+		    padding: 25px;
+			}		
+		.carousel-inner img {
+			width: 100%; /* Set width to 100% */
+			margin: auto;
+			min-height:200px;
+			}
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
-</style>
-</head>
-<body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      	<img src = "img/pt.png" style="width:45px;height:45px;">
-</div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-	  
-	  
-	  
-		<li class="active"><a href="#">Home</a></li>
-		<li><a href="Projects.html">Projects</a></li>
-		<li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+		/* Hide the carousel text when the screen is less than 600 pixels wide */
+		@media (max-width: 600px) {
+		.carousel-caption {
+			 display: none; 
+			}
+		}
+		.sidenav {
+			padding-top: 20px;
+			background-color: #424242;
+			height: 240%;
+			}
+	  </style>
+	</head>
+  <body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+      			<img src = "img/pt.png" style="width:45px;height:45px;">
+		</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="Projects.html">Projects</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+			<ul class="dropdown-menu">
 			<li><a href="https://github.com/CoryRLambert/" target = " blank">Repos</a></li>
-          </ul>
+        </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -84,10 +82,11 @@
   </div>
 </nav>
 <hr>
+ 
 <div class="container">
 <div class="row">
   <div class="col-sm-8">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -159,11 +158,10 @@
   </div>
 </div>
 <hr>
-<hr>
 </div>
 
  <div class="container-fluid text-center">    
-  <div class="row content">
+  <div class="row">
     <div class="container text-center"> 
       <h2>“Try Not to Become a Man of Success. Rather Become a Man of Value.”</h2>
 		<p style="text-align: Right;">~Albert Einstin</p>
@@ -174,15 +172,12 @@
 	  <h4>There's nothing wrong with success, but oftentimes it's easy to lose sight of who you are when you're 
 	  successful. If you keep your eyes on your own values, you'll end up both successful and a good person, 
 	  which is a pretty good combination.</h4>
-	  
-      <hr>
 	  <hr>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p></p>
 </footer>
 
 </body>
